@@ -1,0 +1,17 @@
+:root{--bg:#091226;--panel:#061427;--accent:#06b6d4;--text:#e6f7fb}
+*{box-sizing:border-box}
+html,body{height:100%;}
+body{margin:0;font-family:Inter,Segoe UI,Arial;background:linear-gradient(180deg,#071022,#071025);color:var(--text);display:flex;flex-direction:column}
+.topbar{height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);border-bottom:1px solid rgba(255,255,255,0.03)}
+.brand{font-weight:700}
+.actions{display:flex;align-items:center}
+.actions select,.actions button{margin-left:8px;padding:6px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);color:var(--text);cursor:pointer}
+.editor-area{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}
+.pane{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;display:flex;flex-direction:column;min-height:0}
+label{font-size:12px;color:#9fb0c8;margin-bottom:8px}
+#code{flex:1;background:#001627;color:#c8f7ff;border-radius:6px;border:1px solid rgba(255,255,255,0.03);padding:12px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;resize:none;min-height:200px}
+#preview{flex:1;border-radius:6px;border:1px solid rgba(255,255,255,0.04);background:white}
+.console{height:120px;overflow:auto;background:#021025;border-radius:6px;padding:8px;color:#9fe9ff;margin-top:8px}
+.examples{margin-top:8px}
+.examples button{margin-right:6px;padding:6px 8px;background:rgba(6,182,212,0.06);border:1px solid rgba(6,182,212,0.12);color:var(--accent);border-radius:6px}
+@media(max-width:900px){.editor-area{grid-template-columns:1fr}}
